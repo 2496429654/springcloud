@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <!-- 可以定义一些变量 -->
+    <Properties>
+        <Property name="logFileName">logs/ips-log.log</Property>
+    </Properties>
+
+    <Appenders>
+        <!-- 系统输出  std_out, err_out -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %p [%t] %C{1.} %L - %m%n"/>
+        </Console>
+        <File name="ips-log" fileName="${logFileName}" append="true">
+            <PatternLayout pattern="%d %p [%t] %C{1.} %L - %m%n"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="ips-log"/>
+        </Root>
+    </Loggers>
+</Configuration>

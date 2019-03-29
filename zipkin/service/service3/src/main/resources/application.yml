@@ -1,0 +1,7 @@
+#服务器配置
+server:
+  port: 9083
+  context-path: "/service3"
+  tomcat:
+    basedir: "service3-tomcat"
+    uri-encoding: "UTF-8"
