@@ -15,6 +15,7 @@
         <module>service4</module>
         <module>service5</module>
         <module>common</module>
+        <module>test</module>
     </modules>
 
 

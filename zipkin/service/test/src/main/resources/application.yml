@@ -1,0 +1,7 @@
+#服务器配置
+server:
+  port: 9089
+  context-path: "/service4"
+  tomcat:
+    basedir: "service4-tomcat"
+    uri-encoding: "UTF-8"
