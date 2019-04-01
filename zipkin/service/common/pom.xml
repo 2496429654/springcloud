@@ -13,18 +13,22 @@
         <artifactId>service</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+    <properties>
+        <brave.version>5.4.3</brave.version>
+
+    </properties>
 
     <dependencies>
         <dependency>
             <groupId>io.zipkin.brave</groupId>
             <artifactId>brave-instrumentation-spring-web</artifactId>
-            <version>5.4.3</version>
+            <version>${brave.version}</version>
         </dependency>
 
         <dependency>
             <groupId>io.zipkin.brave</groupId>
             <artifactId>brave</artifactId>
-            <version>5.4.3</version>
+            <version>${brave.version}</version>
         </dependency>
 
         <dependency>
@@ -36,7 +40,7 @@
         <dependency>
             <groupId>io.zipkin.brave</groupId>
             <artifactId>brave-instrumentation-spring-webmvc</artifactId>
-            <version>5.4.3</version>
+            <version>${brave.version}</version>
         </dependency>
         <dependency>
             <groupId>io.zipkin.reporter2</groupId>
@@ -46,19 +50,19 @@
         <dependency>
             <groupId>io.zipkin.brave</groupId>
             <artifactId>brave-instrumentation-spring-web</artifactId>
-            <version>5.4.3</version>
+            <version>${brave.version}</version>
         </dependency>
 
         <dependency>
             <groupId>io.zipkin.brave</groupId>
             <artifactId>brave</artifactId>
-            <version>5.4.3</version>
+            <version>${brave.version}</version>
         </dependency>
 
         <dependency>
             <groupId>io.zipkin.brave</groupId>
             <artifactId>brave-context-slf4j</artifactId>
-            <version>5.4.3</version>
+            <version>${brave.version}</version>
         </dependency>
 
 
